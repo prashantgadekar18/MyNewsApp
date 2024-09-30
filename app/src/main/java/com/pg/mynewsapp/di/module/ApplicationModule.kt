@@ -58,7 +58,11 @@ object ApplicationModule {
     @Singleton
     fun provideHttpLoggingInterceptor(): HttpLoggingInterceptor {
         val httpLoggingInterceptor = HttpLoggingInterceptor()
-        httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
+//        if (BuildConfig.DEBUG) {
+            httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
+//        } else {
+//            httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.NONE
+//        }
         return httpLoggingInterceptor
     }
 
@@ -90,6 +94,7 @@ object ApplicationModule {
     @Singleton
     @NetworkAPIKey
     fun provideNetWorkAPIKey(): String = "de8a29bd439647a9a87f2ef98a8c7e58"
+//    fun provideNetWorkAPIKey(): String = "7522d3bfb4d847fd94a529f3a08731f3"
 
     @Provides
     @Singleton

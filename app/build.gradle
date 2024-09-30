@@ -49,7 +49,9 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'com.google.android.material:material:1.12.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.test:runner:1.6.2'
     testImplementation 'junit:junit:4.13.2'
+    testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
 
@@ -105,4 +107,16 @@ dependencies {
     androidTestImplementation "org.mockito:mockito-core:4.9.0"
     kaptAndroidTest "com.google.dagger:dagger-compiler:2.42"
     testImplementation 'org.mockito:mockito-inline:2.13.0'
+
+    // androidx.test
+    def androidx_test = "1.1.0"
+    androidTestImplementation "androidx.test:runner:$androidx_test"
+    androidTestImplementation "androidx.test:core:$androidx_test"
+    androidTestImplementation "androidx.test.ext:junit-ktx:$androidx_test"
+
+    // Espresso
+    def androidx_test_espresso = "3.5.1"
+    implementation "androidx.test.espresso:espresso-idling-resource:$androidx_test_espresso"
+    androidTestImplementation "org.hamcrest:hamcrest:2.2"
+
 }
