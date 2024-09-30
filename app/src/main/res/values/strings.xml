@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+
+    <string name="top_headline_title">Top Headlines</string>
+    <string name="news_sources_title">News Sources</string>
+    <string name="search_title">Search</string>
+    <string name="news_sources">News Sources</string>
+    <string name="search_news">Search News</string>
+    <string name="error_description">Something went wrong, Lets try\none more time</string>
+    <string name="try_again">try again</string>
+    <string name="error_title">Oops,</string>
+    <string name="language_info">Please select any two language\nPress long to select language.</string>
+    <string name="data_not_found">Data Not found.</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_settings">Setting</string>
+    <string name="menu_Home">Home</string>
+    <string name="source">Source</string>
+    <string name="top_headline_list_title">Top Headline List</string>
+
+</resources>
