@@ -4,34 +4,24 @@ This is a News application with MVVM Architecture and Jetpack Components with un
 ### Major Highlights
 - MVVM Architecture
 - Kotlin
-- Dagger
+- Hilt dependancy injection
 - Room Database
 - Retrofit
 - Coroutines
 - Flow
 - StateFlow
 - ViewBinding
-- Pagination
 - Unit Test
-- UI Test
 
 <p align="center">
 <img alt="mvvm-architecture"  src="https://github.com/user-attachments/assets/196d9a7b-f4f0-4e98-a132-851618c660d1">
 </p>
 
 ## Feature implemented:
-- NewsApp
+- Top News
 - Instant search using Flow operators
-    - Debounce
-    - Filter
-    - DistinctUntilChanged
-    - FlatMapLatest
 - Offline news
-- Pagination
 - Unit Test
-    - Mockito
-    - Turbine https://github.com/cashapp/turbine
-    - Espresso
 - TopHeadlines of the news
 - Multiple sources wise news
 
@@ -57,10 +47,10 @@ implementation 'android.arch.lifecycle:extensions:1.1.1'
 implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
 implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
 ```
-- Dagger for dependency Injection
+- Hilt for dependency Injection
 ```
-implementation "com.google.dagger:dagger:2.42"
-kapt "com.google.dagger:dagger-compiler:2.42"
+implementation "com.google.dagger:hilt-android:2.51.1"
+kapt "com.google.dagger:hilt-compiler:2.51.1"
 ```
 - For WebView browser
 ```
@@ -72,11 +62,6 @@ implementation "androidx.room:room-runtime:2.4.2"
 kapt "androidx.room:room-compiler:2.4.2"
 // optional - Kotlin Extensions and Coroutines support for Room
 implementation "androidx.room:room-ktx:2.4.2"
-```
-
-- Paging library
-```
-implementation "androidx.paging:paging-runtime:3.1.1"
 ```
 - Local Unit test
 ```
