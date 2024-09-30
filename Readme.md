@@ -91,10 +91,7 @@ testImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 ├── ui
 │   ├── MainActivity.kt
 │   ├── base
-│   ├── country
-│   ├── language
 │   ├── newsListScreen
-│   ├── pagination
 │   ├── search
 │   ├── sources
 │   └── topheadline
