@@ -4,34 +4,24 @@ This is a News application with MVVM Architecture and Jetpack Components with un
 ### Major Highlights
 - MVVM Architecture
 - Kotlin
-- Dagger
+- Hilt dependancy injection
 - Room Database
 - Retrofit
 - Coroutines
 - Flow
 - StateFlow
 - ViewBinding
-- Pagination
 - Unit Test
-- UI Test
 
 <p align="center">
 <img alt="mvvm-architecture"  src="https://github.com/user-attachments/assets/196d9a7b-f4f0-4e98-a132-851618c660d1">
 </p>
 
 ## Feature implemented:
-- NewsApp
+- Top News
 - Instant search using Flow operators
-    - Debounce
-    - Filter
-    - DistinctUntilChanged
-    - FlatMapLatest
 - Offline news
-- Pagination
 - Unit Test
-    - Mockito
-    - Turbine https://github.com/cashapp/turbine
-    - Espresso
 - TopHeadlines of the news
 - Multiple sources wise news
 
@@ -57,10 +47,10 @@ implementation 'android.arch.lifecycle:extensions:1.1.1'
 implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
 implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
 ```
-- Dagger for dependency Injection
+- Hilt for dependency Injection
 ```
-implementation "com.google.dagger:dagger:2.42"
-kapt "com.google.dagger:dagger-compiler:2.42"
+implementation "com.google.dagger:hilt-android:2.51.1"
+kapt "com.google.dagger:hilt-compiler:2.51.1"
 ```
 - For WebView browser
 ```
@@ -72,11 +62,6 @@ implementation "androidx.room:room-runtime:2.4.2"
 kapt "androidx.room:room-compiler:2.4.2"
 // optional - Kotlin Extensions and Coroutines support for Room
 implementation "androidx.room:room-ktx:2.4.2"
-```
-
-- Paging library
-```
-implementation "androidx.paging:paging-runtime:3.1.1"
 ```
 - Local Unit test
 ```
@@ -106,10 +91,7 @@ testImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 ├── ui
 │   ├── MainActivity.kt
 │   ├── base
-│   ├── country
-│   ├── language
 │   ├── newsListScreen
-│   ├── pagination
 │   ├── search
 │   ├── sources
 │   └── topheadline
@@ -127,17 +109,12 @@ testImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 
 <p align="center">
 <img alt="main_screen" src="https://github.com/user-attachments/assets/8e945a13-f27a-4953-856b-bac4213b3b3e" width="360"  height="640"> &nbsp;&nbsp;&nbsp;&nbsp;
-<img alt="search_screen" src="https://github.com/user-attachments/assets/e82181e9-962c-4887-a039-d8c0919ac636" width="360"  height="640" marginLeft="20">
+    <img alt="top_headline" src="https://github.com/user-attachments/assets/79eb1518-4375-4c68-8d9e-d744cc6e2d11" width="360"  height="640">
 </p>
 
 <p align="center">
-<img alt="top_headline" src="https://github.com/user-attachments/assets/79eb1518-4375-4c68-8d9e-d744cc6e2d11" width="360"  height="640">
-
-&nbsp;&nbsp;&nbsp;&nbsp;
 <img alt="news_source" src="https://github.com/user-attachments/assets/83d7d725-37a6-4c5a-8576-00a912c065ab" width="360"  height="640"  marginLeft="20">
-</p>
-<p align="center">
-<img alt="news_search" src="https://github.com/user-attachments/assets/e82181e9-962c-4887-a039-d8c0919ac636" width="360"  height="640"  marginLeft="20">
+    <img alt="search_screen" src="https://github.com/user-attachments/assets/e82181e9-962c-4887-a039-d8c0919ac636" width="360"  height="640" marginLeft="20">
 </p>
 
 <P align="center">
